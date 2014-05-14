@@ -37,8 +37,8 @@
 	
 	<package name="${modelName}" namespace="/${modelName}" extends="json-default">
 		<interceptors>
-			<interceptor name="PermissionInterceptor" class="com.w951.zsbus.permission.interceptor.PermissionInterceptor"></interceptor>
-			<interceptor-stack name="FuntlInterceptor">
+			<interceptor name="PermissionInterceptor" class="com.w951.util.interceptor.PermissionInterceptor"></interceptor>
+			<interceptor-stack name="W951Interceptor">
 				<interceptor-ref name="PermissionInterceptor"></interceptor-ref>
 				<interceptor-ref name="defaultStack"></interceptor-ref>
 			</interceptor-stack>
@@ -52,12 +52,12 @@
 		</global-exception-mappings>
 		
 		<action name="Main/*" class="${packageName}.action.MainAction" method="{1}">
-			<interceptor-ref name="FuntlInterceptor"></interceptor-ref>
+			<interceptor-ref name="W951Interceptor"></interceptor-ref>
 			<result>/${"$"}{adminPath}/{1}.jsp</result>
 		</action>
 		
 		<action name="*/action/*" class="${packageName}.action.{1}Action" method="{2}">
-			<interceptor-ref name="FuntlInterceptor"></interceptor-ref>
+			<interceptor-ref name="W951Interceptor"></interceptor-ref>
 			<result type="json">
 				<param name="contentType">text/html</param>
 				<param name="root">result</param>

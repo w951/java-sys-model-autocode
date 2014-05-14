@@ -33,6 +33,7 @@ public class Autocode {
 		map.put("groupId", pro.get("groupId"));
 		map.put("artifactId", pro.get("artifactId"));
 		map.put("name", pro.get("name"));
+		map.put("logName", pro.get("logName"));
 		
 		// 项目信息
 		map.put("projectRoot", pro.get("projectRoot"));

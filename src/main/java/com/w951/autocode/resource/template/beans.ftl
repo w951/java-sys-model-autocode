@@ -46,7 +46,7 @@
 				hibernate.show_sql=false
 				hibernate.format_sql=true
 				hibernate.jdbc.batch_size=50
-				hibernate.cache.region.factory_class=org.hibernate.cache.ehcache.EhCacheRegionFactory
+				hibernate.cache.region.factory_class=org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
 				hibernate.cache.use_query_cache=true
 				hibernate.cache.use_second_level_cache=true
 			</value>

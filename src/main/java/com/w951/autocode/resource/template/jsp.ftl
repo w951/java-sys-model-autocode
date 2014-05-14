@@ -103,14 +103,14 @@
 	   		$("#dg_list").height($(document).height() * 0.98);
 	   	</script>
 	   	
-	   	<div id="dlg_manager" class="easyui-dialog" style="width:800px;height:auto;padding:10px" data-options="title:'管理',buttons:dlgManagerBtn,modal:true,closed:true">
+	   	<div id="dlg_manager" class="easyui-dialog" style="width:800px;height:auto;padding:10px" data-options="title:'管理',buttons:dlgManagerBtn,modal:true,closed:true,maximizable:true">
 	   		<form id="fm_manager" method="post" action="">
 	   			<input id="${classLowerName}_${propertyId}" type="hidden" name="${classLowerName}.${propertyId}" />
-	   			<table align="center">
+	   			<table align="center" style="width:100%;">
 	   				<#list propertyList as pl>
 	   				<tr>
 		    			<td align="right">${pl.propertyComment}</td>
-		    			<td><input id="${classLowerName}_${pl.propertyName}" class="easyui-validatebox" type="text" name="${classLowerName}.${pl.propertyName}" data-options="required:true" style="width:100%;"></input></td>
+		    			<td><input id="${classLowerName}_${pl.propertyName}" class="easyui-validatebox" type="text" name="${classLowerName}.${pl.propertyName}" data-options="required:true" style="width:80%;"></input></td>
 		    		</tr>
 					</#list>
 	   			</table>

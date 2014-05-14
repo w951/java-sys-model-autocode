@@ -13,6 +13,7 @@ import net.sf.json.JSONObject;
 import com.w951.util.action.CommonAction;
 import com.w951.util.bean.BeanUtil;
 import com.w951.util.date.DateUtil;
+import com.w951.util.dto.User;
 import ${packageName}.dto.${classSimpleName}DTO;
 import ${packageName}.entity.${classSimpleName};
 import ${packageName}.service.${classSimpleName}Service;

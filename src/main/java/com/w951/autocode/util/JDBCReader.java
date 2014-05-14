@@ -44,7 +44,9 @@ public class JDBCReader {
 				for (int i = 1; i <= count; i++) {
 					String javaType = rsmd.getColumnClassName(i);
 					javaType = javaType.substring(javaType.lastIndexOf(".") + 1);
-					
+					if (javaType.equals("Timestamp")) {
+						javaType = "String";
+					}
 					String[] str = new String[] {javaType, NamingRuleConvert.replaceUnderlineAndfirstToUpper(rsmd.getColumnName(i), "_", ""), comments.get(i - 1)};
 					list.add(str);
 				}
