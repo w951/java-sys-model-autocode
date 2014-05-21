@@ -1,5 +1,5 @@
 <#ftl strip_whitespace=true/>
-package ${packageName}.action;
+package ${packageName}.api;
 
 import java.util.Map;
 
