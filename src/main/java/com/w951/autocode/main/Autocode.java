@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+import com.w951.autocode.service.ActionAPITemplateHandler;
 import com.w951.autocode.service.ActionMainTemplateHandler;
 import com.w951.autocode.service.ActionTemplateHandler;
 import com.w951.autocode.service.DTOTemplateHandler;
@@ -81,6 +82,10 @@ public class Autocode {
 		// ActionMain文件
 		ActionMainTemplateHandler actionMain = new ActionMainTemplateHandler(getMapParameter());
 		actionMain.handle();
+		
+		// ActionAPI文件
+		ActionAPITemplateHandler actionAPI = new ActionAPITemplateHandler(getMapParameter());
+		actionAPI.handle();
 		
 		// JSP文件
 		JSPTemplateHandler jsp = new JSPTemplateHandler(getMapParameter());
