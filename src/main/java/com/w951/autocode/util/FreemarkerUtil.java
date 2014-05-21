@@ -151,6 +151,8 @@ public class FreemarkerUtil {
 			return "c3p0.properties";
 		if ("struts.ftl".equals(templateName))
 			return "struts.xml";
+		if ("strutsAPI.ftl".equals(templateName))
+			return "struts-api.xml";
 		if ("servlet.ftl".equals(templateName))
 			return "InitServlet.java";
 		if ("web.ftl".equals(templateName))
@@ -166,6 +168,8 @@ public class FreemarkerUtil {
 			return classSimpleName + "Action.java";
 		if ("actionMain.ftl".equals(templateName))
 			return "MainAction.java";
+		if ("actionAPI.ftl".equals(templateName))
+			return classSimpleName + "API.java";
 		
 		if ("jsp.ftl".equals(templateName))
 			return NamingRuleConvert.firstLetterToLowerCase(classSimpleName) + ".jsp";
@@ -190,6 +194,8 @@ public class FreemarkerUtil {
 			return projectRoot + "/src/main/java/" + path + "/config/";
 		if ("struts.ftl".equals(templateName))
 			return projectRoot + "/src/main/java/" + path + "/config/";
+		if ("strutsAPI.ftl".equals(templateName))
+			return projectRoot + "/src/main/java/" + path + "/config/";
 		if ("servlet.ftl".equals(templateName))
 			return projectRoot + "/src/main/java/" + path + "/servlet/";
 		if ("web.ftl".equals(templateName))
@@ -205,6 +211,8 @@ public class FreemarkerUtil {
 			return projectRoot + "/src/main/java/" + path + "/action/";
 		if ("actionMain.ftl".equals(templateName))
 			return projectRoot + "/src/main/java/" + path + "/action/";
+		if ("actionAPI.ftl".equals(templateName))
+			return projectRoot + "/src/main/java/" + path + "/api/";
 		
 		if ("jsp.ftl".equals(templateName))
 			return projectRoot + "/src/main/webapp/" + systemPath + "/";

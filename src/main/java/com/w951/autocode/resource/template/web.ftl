@@ -43,7 +43,8 @@
 			<param-name>config</param-name>
 			<param-value>
 				struts-default.xml,struts-plugin.xml,
-				${packagePath}/config/struts.xml
+				${packagePath}/config/struts.xml,
+				${packagePath}/config/struts-api.xml
 			</param-value>
 		</init-param>
 	</filter>

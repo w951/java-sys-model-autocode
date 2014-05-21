@@ -27,6 +27,7 @@ public class ProjectTemplateHandler implements DataTemplateHandler {
 		FreemarkerUtil.process("beans.ftl", parameter);
 		FreemarkerUtil.process("c3p0.ftl", parameter);
 		FreemarkerUtil.process("struts.ftl", parameter);
+		FreemarkerUtil.process("strutsAPI.ftl", parameter);
 		FreemarkerUtil.process("servlet.ftl", parameter);
 		FreemarkerUtil.process("web.ftl", parameter);
 	}
